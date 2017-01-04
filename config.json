@@ -1,0 +1,26 @@
+{
+    "test": {
+        "db": {
+            "dialect": "sqlite",
+            "storage": "./db.hackmd.sqlite"
+        }
+    },
+    "development": {
+        "domain": "localhost:3000",
+        "db": {
+            "username": "hackmd",
+            "password": "123123",
+            "database": "hackmd",
+            "host": "localhost",
+            "port": "5432",
+            "dialect": "postgres"
+        },
+        "github": {
+            "clientID": "7941e274bdaa3b944ba8",
+            "clientSecret": "d3ef97256c758d0cfbb7226f587843df9a167ac5"
+        }
+    },
+    "production": {
+        "domain": "ih-materials.herokuapp.com"
+    }
+}
