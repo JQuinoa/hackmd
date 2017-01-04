@@ -1,0 +1,9 @@
+#!/bin/bash
+
+git checkout -b heroku
+npm run build:prod
+git add .
+git commit -m"Heroku deploy"
+git push PRODUCTION master:heroku
+git checkout develop
+git branch -D heroku

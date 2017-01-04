@@ -17,12 +17,13 @@ backups/
 *.sqlite
 
 # ignore config files
-config.json
+# config.json
+# public/js/config.js
 .sequelizerc
 
 # ignore webpack build
-public/build
-public/views/build
+# public/build
+# public/views/build
 
 public/uploads/*
 !public/uploads/.gitkeep
