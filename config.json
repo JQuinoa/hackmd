@@ -21,6 +21,6 @@
         }
     },
     "production": {
-        "domain": "ih-materials.herokuapp.com"
+        "domain": "materials.ironhack.com"
     }
 }
