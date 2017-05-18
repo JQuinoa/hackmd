@@ -364,6 +364,10 @@ select {
     color: black;
 }
 
+.ih-image {
+  width: 140px;
+}
+
 @media (max-width: 768px) {
     span.ui-or {
         display: block;
