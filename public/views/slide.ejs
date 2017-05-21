@@ -60,26 +60,6 @@
             <div id="meta" style="display: none;"><%= meta %></div>
 
             <div class="footer">
-                <div class="unselectable hidden-print" style="color: #777;">
-                    <small>
-                        <span>
-                            <% if(lastchangeuserprofile) { %>
-                                <span class="ui-lastchangeuser">&thinsp;<i class="ui-user-icon small" style="background-image: url(<%- lastchangeuserprofile.photo %>);" data-toggle="tooltip" data-placement="right" title="<%- lastchangeuserprofile.name %>"></i></span>
-                            <% } else { %>
-                                <span class="ui-no-lastchangeuser">&thinsp;<i class="fa fa-clock-o fa-fw" style="width: 18px;"></i></span>
-                            <% } %>
-                            &nbsp;<span class="text-uppercase ui-status-lastchange"></span>
-                            <span class="ui-lastchange text-uppercase" data-createtime="<%- createtime %>" data-updatetime="<%- updatetime %>"></span>
-                        </span>
-                        <br>
-                        <% if(ownerprofile && owner !== lastchangeuser) { %>
-                        <span class="ui-owner">
-                            &thinsp;<i class="ui-user-icon small" style="background-image: url(<%- ownerprofile.photo %>);" data-toggle="tooltip" data-placement="right" title="<%- ownerprofile.name %>"></i>
-                            &nbsp;<span class="text-uppercase">owned this note</span>
-                        </span>
-                        <% } %>
-                    </small>
-                </div>
                 <% if(typeof disqus !== 'undefined' && disqus) { %>
                 <div style="margin-top: 25px; margin-bottom: 15px;">
                     <%- include shared/disqus %>
