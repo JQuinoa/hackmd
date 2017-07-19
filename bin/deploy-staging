@@ -1,9 +1,11 @@
 #!/bin/bash
 
 git checkout -b heroku
-npm run build
+npm install
+npm build
+npm prune --production
 git add .
 git commit -m"Heroku deploy"
-git push STAGING heroku:master -f
-git checkout develop
-git branch -D heroku
+git push PRODUCTION heroku:master -f
+# git checkout develop
+# git branch -D heroku
