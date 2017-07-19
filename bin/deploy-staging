@@ -3,7 +3,7 @@
 git checkout -b heroku
 npm install
 npm run build
-npm run prune --production
+npm prune --production
 git add .
 git commit -m"Heroku deploy"
 git push PRODUCTION heroku:master -f
